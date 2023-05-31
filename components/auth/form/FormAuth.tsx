@@ -7,18 +7,13 @@ import { AuthContext } from '@/context/auth/AuthContext';
 import { useForm } from '@/hooks/useForm';
 
 
-type PropsLogin = {
-    email: string;
-    password: string
-}
-
-type PropsRegister = {
+type PropsAuth = {
     email: string;
     password: string
 }
 
 interface FormProps{
-    formData: PropsLogin | PropsRegister;
+    formData: PropsAuth;
     formName?: string;
 }
 
