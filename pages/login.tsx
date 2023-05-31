@@ -26,7 +26,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     apiUrl = 'http://localhost:3000';
   } else {
     // En modo de producción
-    apiUrl = 'https://tu-dominio.com';
+    apiUrl = 'https://journal-app-con-next.vercel.app';
   }
 
   const api = axios.create({
