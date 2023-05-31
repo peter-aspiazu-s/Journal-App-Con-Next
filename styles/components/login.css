@@ -1,0 +1,236 @@
+.login{
+    width: 100%;
+    height: 100vh;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    width: 95%;
+    height: 520px;
+    padding: 20px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-text{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.login-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-input-text, .login-input-password{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 4px solid steelblue;
+    background-color: #333333;
+    color: aliceblue;
+    padding-left: 10px;
+}
+
+.login-input-text-error, .login-input-password-error{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 4px solid brown;
+    background-color: #333333;
+    color: aliceblue;
+    padding-left: 10px;
+    animation-name: borderAnimation;
+    animation-duration: .3s;
+    animation-timing-function: ease-in;
+    animation-direction: left, top;
+}
+
+@keyframes borderAnimation {
+    from{
+        border-bottom: 0;
+    }
+    to{
+        border-bottom: 4px solid brown;
+    }
+}
+
+.login-input-text:focus, .login-input-password:focus{
+    outline: 0;
+}
+
+.login-input-text-error:focus, .login-input-password-error:focus{
+    outline: 0;
+}
+
+.login-label{
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.login-button{
+    width: 100%;
+    height: 30px;
+    border: 0;
+    background-color: steelblue;
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.login-message{
+    margin-bottom: 10px;
+    color: red;
+    animation-name: fadeIn;
+    animation-duration: .2s;
+    animation-timing-function: ease-in;
+    animation-direction: left top;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.login-google, .login-facebook, .login-github, .login-twitter{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    color: aliceblue;
+    border: 0;
+}
+
+.login-google{
+    background-color: #dd4b39;
+}
+
+.login-facebook{
+    background-color: #3b5998;
+}
+
+.login-github{
+    background-color: #333333;
+}
+
+.login-twitter{
+    background-color: #1DA1F2;
+}
+
+
+@media screen and (min-width: 425px){
+    .login-box{
+        width: 390px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .login-box{
+        width: 400px;
+        height: 560px;
+    }
+
+    .login-text{
+        font-size: 25px;
+    }
+
+    .login-input-text, .login-input-password{
+        height: 40px;
+        margin-bottom: 15px;
+    }
+    
+    .login-input-text-error, .login-input-password-error{
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .login-label{
+        font-size: 17px;
+    }
+    
+    .login-button{
+        height: 40px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    .login-button:hover{
+        opacity: 0.9;
+        transition: opacity .2s;
+    }
+    
+    .login-google, .login-facebook, .login-github, .login-twitter{
+        height: 40px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+    .login-google:hover, .login-facebook:hover, .login-github:hover, .login-twitter:hover{
+        opacity: 0.9;
+        transition: opacity .2s;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .login-box{
+        width: 500px;
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .login-box{
+        width: 600px;
+        height: 650px;
+    }
+
+    .login-text{
+        font-size: 30px;
+    }
+
+    .login-input-text, .login-input-password{
+        height: 45px;
+        margin-bottom: 15px;
+    }
+    
+    .login-input-text-error, .login-input-password-error{
+        height: 45px;
+        margin-bottom: 15px;
+    }
+
+    .login-label{
+        font-size: 20px;
+    }
+
+    .login-message{
+        font-size: 20px;
+    }
+    
+    .login-button{
+        height: 45px;
+        font-size: 20px;
+    }
+    
+    .login-google, .login-facebook, .login-github, .login-twitter{
+        height: 45px;
+        font-size: 20px;
+    }
+}

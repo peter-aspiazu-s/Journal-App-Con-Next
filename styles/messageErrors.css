@@ -1,0 +1,8 @@
+.message-error-autheticated{
+    background-color: #E74C3C;
+    color: aliceblue;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 5px;
+}
