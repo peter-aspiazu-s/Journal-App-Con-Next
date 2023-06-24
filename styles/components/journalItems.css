@@ -1,0 +1,122 @@
+.journal-items{
+    width: 100%;
+    height: 0px;
+    transform: translateX(-200%);
+    transition: all .3s;
+    overflow: hidden;
+}
+
+.journal-items_animation{
+    height: auto;
+    transform: translateX(0%);
+    animation-name: journalAnimationIn;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+.journal-items_animation-hide{
+    animation-name: journalAnimationOut;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes journalAnimationIn {
+    0% {
+      height: 0;
+      transform: translateX(-200%);
+    }
+    100% {
+      height: auto;
+      transform: translateX(0%);
+    }
+}
+  
+@keyframes journalAnimationOut {
+    0% {
+        height: auto;
+        transform: translateX(0%);
+    }
+    100% {
+        height: 0;
+        transform: translateX(-200%);
+    }
+}
+
+.journal-items_container{
+    width: 100%;
+    height: 100%;
+}
+
+.journal-items_name{
+    border-bottom: 2px solid #e3e3e3;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #3e3e3e;
+}
+
+.journal-items_journal{
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.journal-items_icon{
+    width: 80px;
+    fill: #737373;
+    height: 30px;
+}
+
+.journal-items_text{
+    width: 230px;
+}
+
+.journal-items_mes{
+    font-weight: 600;
+    font-size: 18px;
+    color: #3e3e3e;
+    margin-bottom: 12px;
+}
+
+.journal-items_desc{
+    color: #3e3e3e;
+}
+
+@media screen and (min-width: 375px){
+
+    .journal-items_text{
+        width: 260px;
+    }
+}
+
+@media screen and (min-width: 425px){
+
+    .journal-items_text{
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .journal-items{
+        width: 400px;
+        border-right: 2px solid #e3e3e3;
+        border-bottom: 2px solid #e3e3e3;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    
+    .journal-items_journal:hover{
+        background-color: #e3e3e3;
+        border: 1px solid #949494;
+        cursor: pointer;
+        transition: all .3s;
+    }
+}

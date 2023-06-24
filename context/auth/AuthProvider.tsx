@@ -1,9 +1,9 @@
-import { useState, ReactNode, FC, FocusEvent } from 'react';
+import { useState, ReactNode, FC } from 'react';
 import { useRouter } from 'next/router';
 import axios from 'axios';
 import { AuthContext } from './AuthContext';
-import { signInWithGithub } from '@/firebase/signInWithGithub';
-import { signInWithGoogle } from '@/firebase/signInWithGoogle';
+import { signInWithGithub } from '../../firebase/signInWithGithub';
+import { signInWithGoogle } from '../../firebase/signInWithGoogle';
 
 interface Props {
     children: ReactNode;
