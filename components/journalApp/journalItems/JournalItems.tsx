@@ -20,31 +20,7 @@ const journalList = [
     {
         mes: 'Junio',
         journal: 'Lorem ipsum dolor sit, amet consectetur adipisicing elitl'
-    },
-    {
-        mes: 'Julio',
-        journal: 'Lorem ipsum dolor sit, amet consectetur adipisicing eliti'
-    },
-    {
-        mes: 'Agosto',
-        journal: 'Lorem ipsum dolor sit, amet consectetur adipisicing elite'
-    },
-    {
-        mes: 'Septiembre',
-        journal: 'Lorem ipsum dolor sit, amet consectetur adipisicing elitt'
-    },
-    {
-        mes: 'Octubre',
-        journal: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit...'
-    },
-    {
-        mes: 'Noviembre',
-        journal: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit..'
-    },
-    {
-        mes: 'Diciembre',
-        journal: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
-    },
+    }
 ]
 
 interface Props {
@@ -53,7 +29,13 @@ interface Props {
 
 export const JournalItems:FC<Props> = ({ viewJournalItems }):JSX.Element => {
   return (
-    <div className={ viewJournalItems ? 'journal-items journal-items_animation' : 'journal-items journal-items_animation-hide'}>
+    <div 
+        className={ 
+            viewJournalItems 
+            ? 'journal-items journal-items-width-true journal-items_animation' 
+            : 'journal-items journal-items-width-false journal-items_animation-hide'
+        }
+    >
         <div className='journal-items_container'>
             <div className='journal-items_name'>Peter Aspiazu</div>
             {

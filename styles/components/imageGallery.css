@@ -1,0 +1,36 @@
+.image-gallery{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.image-gallery_container-img{
+    width: 100%;
+}
+
+.image-gallery_container-img img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .image-gallery_container-img{
+        width: 326px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .image-gallery_container-img{
+        width: 324px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .image-gallery_container-img{
+        width: 350px;
+    }
+}

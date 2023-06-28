@@ -1,0 +1,9 @@
+.journalapp{
+    overflow: hidden;
+}
+
+.journalapp_container{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}

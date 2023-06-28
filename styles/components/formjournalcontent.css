@@ -1,0 +1,38 @@
+.formjournalcontent{
+    width: 100%;
+    height: auto;
+}
+
+.formjournalcontent_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formjournalcontent_input-title{
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    font-size: 17px;
+    background-color: #e4e4e4;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 20px;
+}
+
+.formjournalcontent_input-description{
+    width: 100%;
+    height: 300px;
+    max-height: auto;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 17px;
+    background-color: #e4e4e4;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 20px;
+}

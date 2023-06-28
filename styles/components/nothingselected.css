@@ -1,0 +1,57 @@
+.nothingselected{
+    display: block;
+    overflow: hidden;
+}
+
+.animationContrain{
+    width: 0;
+    height: 0;
+    transition: all .3s;
+}
+
+.animationExpand{
+    width: 100%;
+    transition: all .3s;
+    padding: 20px;
+    height: calc(100vh - 100px);
+}
+
+.nothingselected_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #020046;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nothingselected_icon{
+    fill: aliceblue;
+    margin-bottom: 15px;
+    width: 70px;
+    height: auto;
+}
+
+.nothingselected_text{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px){
+    .animationContrain{
+        width: 100%;
+        height: calc(100vh - 100px);
+        padding: 20px;
+    }
+
+    .nothingselected_icon{
+        width: 100px;
+    }
+    
+    .nothingselected_text{
+        font-size: 30px;
+    }
+}

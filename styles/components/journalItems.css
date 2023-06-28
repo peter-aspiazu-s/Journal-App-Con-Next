@@ -1,9 +1,19 @@
 .journal-items{
-    width: 100%;
+    display: flex;
     height: 0px;
     transform: translateX(-200%);
     transition: all .3s;
     overflow: hidden;
+    z-index: 2;
+    position: relative;
+    background-color: white;
+}
+
+.journal-items-width-true{
+    width: 100%;
+}
+.journal-items-width-false{
+    width: 0;
 }
 
 .journal-items_animation{
@@ -22,22 +32,26 @@
 
 @keyframes journalAnimationIn {
     0% {
-      height: 0;
-      transform: translateX(-200%);
+        height: 0;
+        width: 0;
+        transform: translateX(-200%);
     }
     100% {
-      height: auto;
-      transform: translateX(0%);
+        height: auto;
+        width: 100%;
+        transform: translateX(0%);
     }
 }
   
 @keyframes journalAnimationOut {
     0% {
         height: auto;
+        width: 100%;
         transform: translateX(0%);
     }
     100% {
         height: 0;
+        width: 0;
         transform: translateX(-200%);
     }
 }
@@ -105,10 +119,41 @@
 @media screen and (min-width: 768px){
 
     .journal-items{
-        width: 400px;
         border-right: 2px solid #e3e3e3;
         border-bottom: 2px solid #e3e3e3;
     }
+
+    .journal-items-width-true{
+        width: 400px;
+    }
+
+
+    @keyframes journalAnimationIn {
+        0% {
+            height: 0;
+            width: 0;
+            transform: translateX(-200%);
+        }
+        100% {
+            height: auto;
+            width: 400px;
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes journalAnimationOut {
+        0% {
+            height: auto;
+            width: 400px;
+            transform: translateX(0%);
+        }
+        100% {
+            height: 0;
+            width: 0;
+            transform: translateX(-200%);
+        }
+    }
+
 }
 
 @media screen and (min-width: 1024px){

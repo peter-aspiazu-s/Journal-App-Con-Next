@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .journal_loading{
@@ -21,6 +22,18 @@
 
 @import url(./messageErrors.css);
 
+@import url(./components/journalapp.css);
+
 @import url(./components/header.css);
 
 @import url(./components/journalItems.css);
+
+@import url(./components/nothingselected.css);
+
+@import url(./components/buttonAddJournal.css);
+
+@import url(./components/addnewjournal.css);
+
+@import url(./components/formjournalcontent.css);
+
+@import url(./components/imageGallery.css);

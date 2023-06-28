@@ -4,6 +4,9 @@ import {FC, useState} from 'react';
 import { Header } from './header/Header';
 import { Loading } from '../loading/Loading';
 import { JournalItems } from './journalItems/JournalItems';
+import { NothingSelected } from './nothingSelected/NothingSelected';
+import { ButtonAddJournal } from './buttonAddJournal/ButtonAddJournal';
+import { AddNewJournal } from './addNewJournal/AddNewJournal';
 
 const JournalApp:FC = ():JSX.Element => {
 
@@ -43,10 +46,18 @@ const JournalApp:FC = ():JSX.Element => {
   }
 
   return (
-    <div>
+    <div className='journalapp'>
       <Header handleLogout={handleLogout} handleClickViewJournalItems={handleClickViewJournalItems} />
 
-      <JournalItems viewJournalItems={viewJournalItems} />
+      <div className='journalapp_container'>
+        <JournalItems viewJournalItems={viewJournalItems} />
+
+        {/* <NothingSelected viewJournalItems={viewJournalItems} /> */}
+
+        <AddNewJournal viewJournalItems={viewJournalItems} />
+
+        <ButtonAddJournal />
+      </div>
     </div>
   )
 }
